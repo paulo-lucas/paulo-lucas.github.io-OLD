@@ -27,37 +27,47 @@ header{
 }
 
 #perfil{
-    width: 50vw;
+    width: 100%;
     height: 50vh;
-    left:50%;
+    max-height: 250px;
     top:50%;
-    margin-left: -25vw; /* Metade do valor da Largura */
     margin-top: -25vh; /* Metade da valor da Altura */
     position: absolute;
 }
 
 #nome-perfil{
+    position: absolute;
     display: inline;
-    vertical-align: top;
-    font-size: 40px;
+    left: 55%;
+    font-size: 3em;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #fff;
+    bottom:60%;
 }
 
 #foto-perfil{
     border-radius: 100%;
-    max-width: 100%;
+    max-width: 60%;
     max-height: 100%;
+    position: absolute;
+    right: 50%;
+
 }
 
 #contatos{
+    padding: 0;
+    margin: 0;
     list-style-type: none;
+    position: absolute;
+    left: 55%;
+    top: 60%;
 }
 
 .contato{
-    display: inline;
+    display: inline-block;
+    margin: 0 5px
 }
 
 .icone{
