@@ -49,7 +49,7 @@ function addProjeto(repo){
   var homepage = repo.homepage;
   if(linguagem == null){ linguagem = "outra"; }
   
-  if(homepage == null){
+  if(homepage == null || homepage == ""){
     projetos.append(`<div class="box">
                       <h3><span class="repo-name">${repo.name}</span></h3>
                       <div class="description-box shadow p-3"><p disabled class="repo-description">${repo.description}</p></div>
