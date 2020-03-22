@@ -28,8 +28,7 @@ $(function () {
 function estilizaCarrossel(){
   $('.projects-carousel').owlCarousel({
       loop:true,
-      nav: false,
-      //center:true,
+      nav: true,
       responsive: { 0: { 
           items: 1, 
         }, 
@@ -37,8 +36,7 @@ function estilizaCarrossel(){
           items: 2, 
         }, 
         900: { 
-          items: 3,
-          stagePadding: 50
+          items: 4,
         } 
       }
   });
@@ -48,14 +46,27 @@ function estilizaCarrossel(){
 function addProjeto(repo){
   var projetos = $(".projects-carousel");
   var linguagem = repo.language;
-
+  var homepage = repo.homepage;
   if(linguagem == null){ linguagem = "outra"; }
   
-  projetos.append(`<div class="box">
+  if(homepage == null){
+    projetos.append(`<div class="box">
                       <h3><span class="repo-name">${repo.name}</span></h3>
                       <div class="description-box shadow p-3"><p disabled class="repo-description">${repo.description}</p></div>
                       <p class="repo-language">Linguagem: <span>${linguagem}</span></p>
                       <a href="${repo.html_url}" target="_blank"><img class="icone repo-link" src="ico/github.png" alt="Ver no GitHub"></a>
+                      
                   </div> `);
+  }else{
+    projetos.append(`<div class="box">
+                      <h3><span class="repo-name">${repo.name}</span></h3>
+                      <div class="description-box shadow p-3"><p disabled class="repo-description">${repo.description}</p></div>
+                      <p class="repo-language">Linguagem: <span>${linguagem}</span></p>
+                      <a href="${repo.html_url}" target="_blank"><img class="icone repo-link" src="ico/github.png" alt="Ver no GitHub"></a>
+                      <a href="${homepage}" target="_blank"><span class="badge badge-pill badge-warning">Ver no site</span></a>
+                  </div> `);
+  }
+
+  
   
 }

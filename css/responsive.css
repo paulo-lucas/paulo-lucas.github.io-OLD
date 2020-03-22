@@ -65,6 +65,27 @@
 
 /* section projetos */
 
+@media screen and (max-width:840px){
+    .owl-nav {
+        display: block;
+        margin-top: 10px;
+      }
+      
+    .owl-prev, .owl-next{
+        display: inline-block;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #433647;
+        cursor: pointer;
+        transform: scale(2);
+    }
+
+    .owl-dot {
+        display: none;
+    }
+}
+
 @media screen and (max-width:350px){
     .box{
         max-width: 80vw;

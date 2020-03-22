@@ -1,2 +1,2 @@
 # Paulo Lucas Cerqueira
-Portifólio de pojetos.
+Página pessoal e portifólio de projetos.
