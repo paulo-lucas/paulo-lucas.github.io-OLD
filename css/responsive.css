@@ -1,5 +1,12 @@
-@media screen and (max-width:540px){
-    #perfil{
+@media screen and (max-width:980px){
+    
+    
+}
+
+
+/* header */
+@media screen and (max-width:980px){
+    header .container{
         text-align: center;
     }
     

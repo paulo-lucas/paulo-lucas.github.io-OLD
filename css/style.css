@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body, html{
     margin: 0;
 }
@@ -19,20 +23,44 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-header{
+header, section{
     position: relative;
-    background: url("../img/banner.png") repeat scroll center center / cover;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
-#perfil{
+.container{
     width: 100%;
     height: 50vh;
-    max-height: 250px;
     top:50%;
     margin-top: -25vh; /* Metade da valor da Altura */
     position: absolute;
+}
+
+.scroll-down{
+    max-width: 64px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -32px;
+    transition: all 0.2s linear;
+}
+
+.scroll-down:hover{
+    max-width: 72px;
+    transform: translateX(-5%);
+}
+
+
+/* estilos do header */
+
+
+header{
+    background: url("../img/banner.png") repeat scroll center center / cover;
+}
+
+header .container{
+    max-height: 250px;
 }
 
 #nome-perfil{
@@ -73,3 +101,81 @@ header{
 .icone{
     max-width: 24px;
 }
+
+
+/* estilos da section de informaçõe */
+
+
+#info-section{
+    background-color: #f0dac5;
+}
+
+#info-section .container{
+    margin-right:  10vw;
+    margin-left:  10vw;
+
+}
+
+.info-titulo{
+    color: #1c2340;
+}
+
+.info-titulo:last-of-type{
+    text-align: right;
+}
+
+#info-ul{
+    margin: 0;
+    display: inline-block; 
+}
+
+.info-li{
+    color: #50223c;
+    padding: 5px;
+    
+}
+
+#info-p{
+    color: #50223c;
+    width: 40%;
+    text-align: right;
+    margin-left: 50%;
+}
+
+
+.sim-btn{
+	cursor: pointer;
+}
+
+.btn-hover-lt{
+	margin: 20px auto;
+	border: none;
+	padding: 10px 44px;
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+}
+
+.btn-hover-lt::before {
+	transition: all 0.85s cubic-bezier(.8,-0.1,.3,1.3);
+	content: '';
+	width: 10%;
+	height: 100%;
+	background: #1c2340;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.btn-hover-lt .btn-text {
+  color: #f0dac5;
+  mix-blend-mode: difference;
+}
+
+.btn-hover-lt:hover::before {
+  background: #1c2340;
+  width: 100%;
+  border-radius: 10px;
+}
+
