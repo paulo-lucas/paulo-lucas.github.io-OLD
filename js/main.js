@@ -27,7 +27,7 @@ $(function () {
 
 function estilizaCarrossel(){
   $('.projects-carousel').owlCarousel({
-      //loop:true,
+      loop:true,
       nav: false,
       //center:true,
       responsive: { 0: { 

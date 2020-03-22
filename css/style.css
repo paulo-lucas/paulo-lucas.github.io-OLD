@@ -114,14 +114,10 @@ header .container{
     background-color: #433647;
 }
 
-#info-section .container{
-    margin-right:  10vw;
-    margin-left:  10vw;
-
-}
 
 .info-titulo:last-of-type{
     text-align: right;
+    margin-right: 15px;
 }
 
 #info-ul{
