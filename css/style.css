@@ -34,7 +34,7 @@ button:focus{
 }
 
 .container{
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     top:50%;
     margin-top: -25vh; /* Metade da valor da Altura */
@@ -110,8 +110,8 @@ header .container{
 /* estilos da section de informaçõe */
 
 
-#info-section{
-    background-color: #f0dac5;
+#info-section, #info-section .botao-animado{
+    background-color: #433647;
 }
 
 #info-section .container{
@@ -130,7 +130,6 @@ header .container{
 }
 
 .info-li{
-    color: #50223c;
     padding: 5px;
     
 }
@@ -142,7 +141,7 @@ header .container{
 }
 
 #info-p, #info-ul, .info-titulo{
-    color: #50223c;
+    color: #cd4937;
 }
 
 #info-p, #info-ul{
@@ -156,7 +155,6 @@ header .container{
 	font-size: 20px;
 	position: relative;
     display: inline-block;
-    background-color: #f0dac5;
 }
 
 .botao-animado::before {
@@ -164,7 +162,7 @@ header .container{
 	content: '';
 	width: 10%;
 	height: 100%;
-	background: #1c2340;
+	background: #cd4937;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -172,12 +170,12 @@ header .container{
 }
 
 .botao-animado:hover::before {
-  background: #1c2340;
+  background: #974b51;
   width: 100%;
   border-radius: 10px;
 }
 
 .botao-animado-text{
-  color: #f0dac5;
+  color: white;
   mix-blend-mode: difference;
 }
