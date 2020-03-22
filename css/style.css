@@ -29,6 +29,10 @@ header, section{
     width: 100vw;
 }
 
+button:focus{
+    outline: none;
+}
+
 .container{
     width: 100%;
     height: 50vh;
@@ -116,16 +120,12 @@ header .container{
 
 }
 
-.info-titulo{
-    color: #1c2340;
-}
-
 .info-titulo:last-of-type{
     text-align: right;
 }
 
 #info-ul{
-    margin: 0;
+    margin: 0 0 2em 0;
     display: inline-block; 
 }
 
@@ -136,27 +136,30 @@ header .container{
 }
 
 #info-p{
-    color: #50223c;
     width: 40%;
     text-align: right;
     margin-left: 50%;
 }
 
-
-.sim-btn{
-	cursor: pointer;
+#info-p, #info-ul, .info-titulo{
+    color: #50223c;
 }
 
-.btn-hover-lt{
+#info-p, #info-ul{
+    font-size: 1.2em;
+}
+
+.botao-animado{
 	margin: 20px auto;
 	border: none;
 	padding: 10px 44px;
 	font-size: 20px;
 	position: relative;
-	display: inline-block;
+    display: inline-block;
+    background-color: #f0dac5;
 }
 
-.btn-hover-lt::before {
+.botao-animado::before {
 	transition: all 0.85s cubic-bezier(.8,-0.1,.3,1.3);
 	content: '';
 	width: 10%;
@@ -168,14 +171,13 @@ header .container{
 	border-radius: 10px 0px 0px 10px;
 }
 
-.btn-hover-lt .btn-text {
-  color: #f0dac5;
-  mix-blend-mode: difference;
-}
-
-.btn-hover-lt:hover::before {
+.botao-animado:hover::before {
   background: #1c2340;
   width: 100%;
   border-radius: 10px;
 }
 
+.botao-animado-text{
+  color: #f0dac5;
+  mix-blend-mode: difference;
+}

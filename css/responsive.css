@@ -30,3 +30,35 @@
         margin-top: 3em;
     }
 }
+
+/* section sobre mim */
+@media screen and (max-width:840px){
+    
+    #info-section .container{
+        margin: 0;
+        height: 90%;
+        top: 10%;
+    }
+
+    #info-ul{
+        font-size: 1em;
+    }
+
+    #info-p{
+        text-align: justify;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #info-section .botao-animado{
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+    }
+}
+
+@media screen and (max-width:350px){
+    #info-section{
+        height: 130vh;
+    }
+}
