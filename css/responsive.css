@@ -41,7 +41,7 @@
     }
 
     #info-ul{
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     #info-p{
@@ -60,5 +60,13 @@
 @media screen and (max-width:350px){
     #info-section{
         height: 130vh;
+    }
+}
+
+/* section projetos */
+
+@media screen and (max-width:350px){
+    .box{
+        max-width: 80vw;
     }
 }

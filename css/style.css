@@ -9,7 +9,7 @@ body, html{
 body {
     background: #ffffff;
     color: #898989;
-    /* font-family: 'Poppins', helvetica; */
+    font-family: 'Poppins', helvetica;
     font-size: 15px;
     font-weight: 300;
     line-height: 20px;
@@ -34,6 +34,7 @@ button:focus{
 }
 
 .container{
+    max-width: none;
     width: 100vw;
     height: 50vh;
     top:50%;
@@ -109,7 +110,6 @@ header .container{
 
 /* estilos da section de informaçõe */
 
-
 #info-section, #info-section .botao-animado{
     background-color: #433647;
 }
@@ -145,7 +145,7 @@ header .container{
 }
 
 #info-p, #info-ul{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .botao-animado{
@@ -178,4 +178,92 @@ header .container{
 .botao-animado-text{
   color: white;
   mix-blend-mode: difference;
+}
+
+
+/* section portifolio (folio) */
+
+#folio-section{
+    background-color: #624a5a;
+    text-align: center;
+}
+
+#folio-titulo{
+    font-size: 3em;
+    font-weight: 700;
+    color: #974b51;
+    padding-top: 5vh;
+}
+
+.box{
+    width: 300px;
+    height: 320px;
+    background-color: #433647;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.repo-name{
+    display: inline-block;
+    color: #cd4937;
+    min-height: 70px;
+}
+
+.description-box{
+    margin: 0;
+    background-color: #624a5a;
+    height: 150px;
+    vertical-align: middle;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.repo-description{
+    resize: none;
+}
+
+.repo-language{
+    margin: 20px;
+    font-weight: 700;
+}
+
+/* carousel styles */
+
+.projects-carousel, .owl-stage-outer{
+    width: 100%;
+}
+
+.owl-item {
+    float: left;
+    width: auto !important;
+}
+
+.owl-stage-outer {
+    overflow: hidden;
+}
+  
+.owl-dots {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    border: 0;
+    padding: 0 !important;
+    background-color: #433647;
+    cursor: pointer;
+  }
+  
+.owl-dot.active {
+    background-color: #000;
+}
+  
+.owl-nav {
+    display: none;
 }
