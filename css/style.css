@@ -83,7 +83,7 @@ header .container{
 
 }
 
-#contatos{
+#icones{
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -233,7 +233,7 @@ header .container{
 }
 
 .repo-language{
-    margin: 20px;
+    margin: 1.5em;
     font-weight: 700;
     color: #974b51;
 }
@@ -251,13 +251,28 @@ header .container{
     color: #433647;
 }
 
-.repo-language, .repo-description{
-    
-}
-
 
 /* seção sobre o site */
 
 #site-section{
     background-color: #433647;
+    color: #cd4937;
+}
+
+#site-titulo{
+    margin-bottom: 20px;
+}
+
+.site-p{
+    text-align: justify;
+    margin: 1em auto;
+    width: 90%;
+}
+
+/* footer contato */
+
+footer{
+    background-color: #000;
+    width: 100vw;
+    height: 50vh;
 }

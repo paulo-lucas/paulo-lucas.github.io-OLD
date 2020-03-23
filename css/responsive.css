@@ -24,17 +24,17 @@
         display: block;
     }
 
-    #contatos{
+    #icones{
         position: static;
         display: block;
         margin-top: 3em;
     }
 }
 
-/* section sobre mim */
+/* section de texto*/
 @media screen and (max-width:840px){
     
-    #info-section .container{
+    #info-section .container, #site-section .container{
         margin: 0;
         height: 90%;
         top: 10%;
@@ -78,5 +78,14 @@
 
     #folio-section .box{
         box-shadow: unset;
+    }
+}
+
+
+/* section sobre o site */
+
+@media screen and (max-width:350px){
+    #site-section{
+        height: 130vh;
     }
 }
