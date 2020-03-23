@@ -26,6 +26,8 @@ $(function () {
 
 
 function estilizaCarrossel(){
+
+  /*
   $('.projects-carousel').owlCarousel({
       loop:true,
       nav: true,
@@ -39,6 +41,16 @@ function estilizaCarrossel(){
           items: 4,
         } 
       }
+  });*/
+
+  $(".projects-carousel").slick({
+    centerMode: true,
+    centerPadding: '40px',
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    variableWidth: true,
   });
 }
 
@@ -50,20 +62,20 @@ function addProjeto(repo){
   if(linguagem == null){ linguagem = "outra"; }
   
   if(homepage == null || homepage == ""){
-    projetos.append(`<div class="box">
+    projetos.append(`<div class="repo-block">
                       <h3><span class="repo-name">${repo.name}</span></h3>
                       <div class="description-box shadow p-3"><p disabled class="repo-description">${repo.description}</p></div>
                       <p class="repo-language">Linguagem: <span>${linguagem}</span></p>
-                      <a href="${repo.html_url}" target="_blank"><img class="icone repo-link" src="ico/github.png" alt="Ver no GitHub"></a>
+                      <a href="${repo.html_url}" target="_blank"><span class="badge badge-light">Ver no GitHub</span></a>
                       
                   </div> `);
   }else{
-    projetos.append(`<div class="box">
+    projetos.append(`<div class="repo-block">
                       <h3><span class="repo-name">${repo.name}</span></h3>
                       <div class="description-box shadow p-3"><p disabled class="repo-description">${repo.description}</p></div>
                       <p class="repo-language">Linguagem: <span>${linguagem}</span></p>
-                      <a href="${repo.html_url}" target="_blank"><img class="icone repo-link" src="ico/github.png" alt="Ver no GitHub"></a>
-                      <a href="${homepage}" target="_blank"><span class="badge badge-pill badge-warning">Ver no site</span></a>
+                      <a href="${repo.html_url}" target="_blank"><span class="badge badge-light">Ver no GitHub</span></a>
+                      <a href="${homepage}" target="_blank"><span class="badge badge-danger">Ver na página</span></a>
                   </div> `);
   }
 
