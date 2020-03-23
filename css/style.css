@@ -47,6 +47,9 @@ button:focus{
     margin: 0 auto;
 }
 
+a:focus{
+    outline: 0;
+}
 
 /* estilos do header */
 
