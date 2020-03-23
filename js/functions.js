@@ -39,7 +39,7 @@ function addProjeto(repo){
                       <h3><span class="repo-name">${repo.name}</span></h3>
                       <div class="description-box shadow p-3"><p disabled class="repo-description">${repo.description}</p></div>
                       <p class="repo-language">Linguagem: <span>${linguagem}</span></p>
-                      <a href="${repo.html_url}" target="_blank"><span class="badge badge-light">Ver no GitHub</span></a>
+                      <a href="${repo.html_url}" target="_blank"><span class="badge badge-github badge-pill">Ver no GitHub</span></a>
                       
                   </div> `);
   }else{
@@ -47,8 +47,8 @@ function addProjeto(repo){
                       <h3><span class="repo-name">${repo.name}</span></h3>
                       <div class="description-box shadow p-3"><p disabled class="repo-description">${repo.description}</p></div>
                       <p class="repo-language">Linguagem: <span>${linguagem}</span></p>
-                      <a href="${repo.html_url}" target="_blank"><span class="badge badge-light">Ver no GitHub</span></a>
-                      <a href="${homepage}" target="_blank"><span class="badge badge-danger">Ver na página</span></a>
+                      <a href="${repo.html_url}" target="_blank"><span class="badge badge-pill">Ver no GitHub</span></a>
+                      <a href="${homepage}" target="_blank"><span class="badge badge-pill">Ver na página</span></a>
                   </div> `);
   }
 }

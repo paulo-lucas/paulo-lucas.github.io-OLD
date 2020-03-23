@@ -205,6 +205,10 @@ header .container{
     border-radius: 15px;
 }
 
+.repo-block:focus{
+    outline:0;
+}
+
 .repo-name{
     display: inline-block;
     color: #cd4937;
@@ -231,6 +235,11 @@ header .container{
 
 #folio-section .box{
     box-shadow:  0 15px #624a5a , 0 -15px #624a5a, 3px 0 10px  #262626, -3px 0 10px #262626;
+}
+
+.badge{
+    background-color: #cd4937;
+    color: white;
 }
 
 .slick-arrow::before{
