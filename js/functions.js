@@ -35,7 +35,7 @@ function addProjeto(repo){
   var name = repo.name;
 
   if(linguagem == null){ linguagem = "outra"; }
-  if(name == "paulo-lucas.github.io"){ name = "Este site"; }
+  if(name == "paulo-lucas.github.io"){ name = "Esta página"; }
   
   if(homepage == null || homepage == ""){
     projetos.append(`<div class="repo-block">
