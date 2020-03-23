@@ -233,6 +233,9 @@ header .container{
     box-shadow:  0 15px #624a5a , 0 -15px #624a5a, 3px 0 10px  #262626, -3px 0 10px #262626;
 }
 
+.slick-arrow::before{
+    color: #433647;
+}
 
 /* seção sobre o site */
 
