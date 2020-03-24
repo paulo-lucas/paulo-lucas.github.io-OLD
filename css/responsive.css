@@ -109,11 +109,17 @@
         padding: 0;
     }
 
-    .contato-item, .lista-item{
+    .contato-item, .link-item{
         display: block;
     }
 
     .ponto:not(.ponto-telefone){
         display: none;
+    }
+}
+
+@media screen and (max-width:350px){
+    footer{
+        height: 110vh;
     }
 }
