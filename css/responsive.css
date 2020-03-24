@@ -31,10 +31,10 @@
     }
 }
 
-/* section de texto*/
+/* section de info*/
 @media screen and (max-width:840px){
     
-    #info-section .container, #site-section .container{
+    #info-section .container{
         margin: 0;
         height: 90%;
         top: 10%;
@@ -83,9 +83,37 @@
 
 
 /* section sobre o site */
+@media screen and (max-width:840px){
+    #site-section .container{
+        margin: 0;
+        height: 90%;
+        top: 10%;
+    }
+}
+
 
 @media screen and (max-width:350px){
     #site-section{
         height: 130vh;
+    }
+}
+
+/* section contato */
+
+@media screen and (max-width:840px){
+    footer{
+        height: 100vh;
+    }
+
+    #contato-lista, #link-lista{
+        padding: 0;
+    }
+
+    .contato-item, .lista-item{
+        display: block;
+    }
+
+    .ponto:not(.ponto-telefone){
+        display: none;
     }
 }

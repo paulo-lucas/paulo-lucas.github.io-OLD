@@ -1,124 +1,206 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Paulo Lucas Cerqueira</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<head>
+    <title>Paulo Lucas Cerqueira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 
-        <!-- Libraries CSS Files -->
-        <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
 
-        <!-- Main Stylesheet File -->
-        <link rel="stylesheet" href="css/style.css">
+    <!-- Libraries CSS Files -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
-        <!-- Responsive Stylesheet File -->
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <body>
-        <header>
-            <div class="container">
-                <img id="foto-perfil">
-                <h1 id="nome-perfil"><span id="im">I'm</span> <span class="typed"></span></h1>
+    <!-- Responsive Stylesheet File -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header id="hello-world">
+        <div class="container">
+            <img id="foto-perfil">
+            <h1 id="nome-perfil"><span id="im">I'm</span> <span class="typed"></span></h1>
 
 
-                <ul id="icones">
-                    <li class="contato">
-                        <a href="#contato-section">
-                            <img class="icone" src="ico/phone-light.png" alt="Contato">
-                        </a>
-                    </li>
-                    <li class="contato">
-                        <a target="_blank" href="https://www.linkedin.com/in/paulo-lucas-cerqueira-455b26179">
-                            <img class="icone" src="ico/linkedin-light.png" alt="LinkedIn">
-                        </a>
-                    </li>
-                    <li class="contato">
-                        <a target="_blank" href="https://github.com/paulo-lucas">
-                            <img class="icone" src="ico/github-light.png" alt="GitHub">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <a href="#info-section"><img class="scroll-down" src="ico/down-arrow-light.png" alt="Scroll down"></a>
-        </header>
-
-        <main>
-            <section id="info-section">
-                <div class="container">
-                    <div class="box">
-                        <h2 class="info-titulo">&lt;Sobre mim&gt;</h2>
-                        <br>
-
-                        <ul id="info-ul">
-                            <li class="info-li">Estudante de Ciência da Computação na Universidade Vila Velha (UVV)</li>
-                            <li class="info-li">Apaixonado por tecnologia</li>
-                            <li class="info-li">Interessado em todo tipo de experiência de aprendizado e crescimento.</li>
-                        </ul>
-                        <br>
-
-                        <p id="info-p">Entrei em contato com programação no ensino médio e desde sempre estudei de forma autodidata e empenhada. Antes de terminar o segundo grau, iniciei o curso superior em meio período na área de TI. Atualmente estudando desenvolvimento web, mas aberto a todo novo desafio.</p>
-                        
-                        <br>
-                        <h2 class="info-titulo">&lt;/Sobre mim&gt;</h2>
-
-                        <a href="download/curriculo.pdf" download="PauloCerqueira-CV.pdf" target="_blank">
-                            <button class="botao-animado"><span class="botao-animado-text">Visualizar CV</span></button>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="folio-section">
-                <h1 id="folio-titulo">Projetos</h1>
-
-                <div class="container">
-
-                    <div class="projects-carousel box">
-                    </div>
-            
-                </div>
-            
-            </section>
-
-            
-            <section id="site-section">
-                <div class="container">
-                    <div class="box">
-                        <h2 id="site-titulo">Sobre esta página</h2>
-                        <p class="site-p">A página que você está lendo foi um projeto (e também um desafio) pessoal, tomou vários dias de dedicação e estudo de um iniciante no desenvolvimento web. Do meu ponto de vista, foi uma experiência extremamente divertida e construtiva. Espero que os próximos projetos, ou até mesmo a evolução deste, sejam igualmente educativos.</p>
-                        <p class="site-p">A biblioteca JavaScript utilizada foi o jQuery, junto de outras bibliotecas para auxiliar nos estilos (Bootstrap, Typed.js, slick.js). Os projetos da seção acima são a resposta de uma requisição à API do GitHub para retornar minha <a href="https://github.com/paulo-lucas/repositories" target="_blank">lista de repositórios</a>.</p>
-                        <p class="site-p">Quaisquer erro, sugestão ou crítica, por favor, entre em <a href="#contato-section">contato</a>. Ficarei feliz de ter sua ajuda no desenvolvimento desta página =)</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--
-        <footer id="contato">
-            <h3 id="agradecimento">Obrigado por visitar minha página!</h3>
-            <ul>
-
+            <ul id="icones">
+                <li class="icone-contato">
+                    <a href="#contato">
+                        <img class="icone" src="ico/phone-light.png" alt="Contato">
+                    </a>
+                </li>
+                <li class="icone-contato">
+                    <a target="_blank" href="https://www.linkedin.com/in/paulo-lucas-cerqueira-455b26179">
+                        <img class="icone" src="ico/linkedin-light.png" alt="LinkedIn">
+                    </a>
+                </li>
+                <li class="icone-contato">
+                    <a target="_blank" href="https://github.com/paulo-lucas">
+                        <img class="icone" src="ico/github-light.png" alt="GitHub">
+                    </a>
+                </li>
             </ul>
-        </footer>-->
-    
-        
-    </body>
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/typed/typed.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
+        </div>
+        <div class="go-box">
+            <a href="#info-section"><img class="go-down" src="ico/down-arrow-light.png" alt="Scroll down"></a>
+        </div>
+    </header>
 
-    <script src="js/functions.js"></script>
-    <!-- Main Javascript File -->
-    <script src="js/main.js"></script>
+    <main>
+        <section id="info-section">
+            <div class="container">
+                <div class="box">
+                    <h2 class="info-titulo">&lt;Sobre mim&gt;</h2>
+                    <br>
 
-   
+                    <ul id="info-ul">
+                        <li class="info-li">Estudante de Ciência da Computação na Universidade Vila Velha (UVV)</li>
+                        <li class="info-li">Apaixonado por tecnologia</li>
+                        <li class="info-li">Interessado em todo tipo de experiência de aprendizado e crescimento.</li>
+                    </ul>
+                    <br>
+
+                    <p id="info-p">Entrei em contato com programação no ensino médio e desde sempre estudei de forma
+                        autodidata e empenhada. Antes de terminar o segundo grau, iniciei o curso superior em meio
+                        período na área de TI. Atualmente estudando desenvolvimento web, mas aberto a todo novo desafio.
+                    </p>
+
+                    <br>
+                    <h2 class="info-titulo">&lt;/Sobre mim&gt;</h2>
+
+                    <a href="download/curriculo.pdf" download="PauloCerqueira-CV.pdf" target="_blank">
+                        <button class="botao-animado"><span class="botao-animado-text">Visualizar CV</span></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="folio-section">
+            <h1 id="folio-titulo">Projetos</h1>
+
+            <div class="container">
+
+                <div class="projects-carousel box">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="site-section">
+            <div class="container">
+                <div class="box">
+                    <h2 id="site-titulo">Sobre esta página</h2>
+                    <p class="site-p">A página que você está lendo foi um projeto (e também um desafio) pessoal, tomou
+                        vários dias de dedicação e estudo de um iniciante no desenvolvimento web. Do meu ponto de vista,
+                        foi uma experiência extremamente divertida e construtiva. Espero que os próximos projetos, ou
+                        até mesmo a evolução deste, sejam igualmente educativos.</p>
+                    <p class="site-p">A biblioteca JavaScript utilizada foi o jQuery, junto de outras bibliotecas para
+                        auxiliar nos estilos (Bootstrap, Typed.js, slick.js). Os projetos da seção acima são a resposta
+                        de uma requisição à API do GitHub para retornar minha <a
+                            href="https://github.com/paulo-lucas/repositories" target="_blank">lista de
+                            repositórios</a>.</p>
+                    <p class="site-p">Quaisquer erro, sugestão ou crítica, por favor, entre em <a
+                            href="#contato">contato</a>. Ficarei feliz de ter sua ajuda no desenvolvimento desta
+                        página =)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="go-box">
+            <a href="#hello-world"><img class="go-up" src="ico/down-arrow-light.png" alt="Scroll up"></a>
+        </div>
+
+        <h3 id="contato-titulo">Obrigado por visitar minha página!</h3>
+        <ul id="contato-lista">
+            <li class="contato-item">
+                <div class="contato-block">
+                    <h5 class="contato-titulo">Telefones</h5>
+                    <p class="contato-p">
+                        <a href="tel:+5527999195142">(27)9 99195142 </a>
+                        <img class="ponto ponto-telefone" src="ico/ponto.png">
+                        <a href="tel:+5533988615142"> (33)9 88615142</a>
+                    </p>
+                </div>
+            </li>
+            <li class="contato-item">
+                <div class="contato-block">
+                    <h5>Emails</h5>
+                    <p class="contato-p">
+                        <a href="mailto:paulolucas.2010@hotmail.com">paulolucas.2010@hotmail.com</a>
+                        <img class="ponto" src="ico/ponto.png">
+                        <a href="mailto:paulo.cerqueira@uvvnet.com.br">paulo.cerqueira@uvvnet.com.br</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+        <h5 id="link-titulo">Links de outros projetos</h5>
+        <ul id="link-lista">
+            <li class="link-item">
+                <a href="https://catalogo-de-passaros.netlify.com" target="_blank">Catálogo de Pássaros</a>
+            </li>
+
+            <li class="link-item">
+                <img class="ponto" src="ico/ponto.png">
+            </li>
+
+            <li class="link-item">
+                <a href="https://formulario-template.netlify.com" target="_blank">Formulário</a>
+            </li>
+
+            <li class="link-item">
+                <img class="ponto" src="ico/ponto.png">
+            </li>
+
+            <li class="link-item">
+                <a href="https://calculadora-template.netlify.com" target="_blank">Calculadora</a>
+            </li>
+
+            <li class="link-item">
+                <img class="ponto" src="ico/ponto.png">
+            </li>
+
+            <li class="link-item">
+                <a href="https://tabela-imc.netlify.com" target="_blank">Tabela de Nutrição</a>
+            </li>
+
+            <li class="link-item">
+                <img class="ponto" src="ico/ponto.png">
+            </li>
+
+            <li class="link-item">
+                <a href="https://cadastro-de-alunos.netlify.com" target="_blank">Cadastro</a>
+            </li>
+        </ul>
+
+        <div class="contao-block">
+            <h5></h5>
+            <p></p>
+        </div>
+
+    </footer>
+
+
+</body>
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/typed/typed.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<script src="js/functions.js"></script>
+<!-- Main Javascript File -->
+<script src="js/main.js"></script>
+
 </html>
