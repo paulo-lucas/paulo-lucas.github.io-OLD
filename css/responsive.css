@@ -71,6 +71,12 @@
     }
 }
 
+@media screen and (max-width:840px){
+    ul.slick-dots{
+        display: none !important;
+    }
+}
+
 @media screen and (max-width:350px){
     .repo-block{
         max-width: 80vw;

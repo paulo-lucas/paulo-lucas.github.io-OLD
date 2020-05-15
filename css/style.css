@@ -202,6 +202,19 @@ header .go-box{
     padding-top: 5vh;
 }
 
+.legenda{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+.legenda p {
+    margin: 0;
+}
+
 .repo-block{
     width: 300px;
     height: 320px;
@@ -213,6 +226,14 @@ header .go-box{
 
 .repo-block:focus{
     outline:0;
+}
+
+.star-emoji{
+    z-index: 999;
+    max-width: 48px;
+    max-height: 48px;
+    position: absolute;
+    transform: translateY(-10px) translateX(-50%);
 }
 
 .repo-name{
